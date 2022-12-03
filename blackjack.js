@@ -55,7 +55,7 @@ function deal(){
     //deal to dealer
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "cards/"+ card +".png";
+        cardImg.src = "../cards/"+ card +".png";
         dealerScore += getValue(card);
         dealerAces += checkAce(card);
         document.getElementById("dealerCards").append(cardImg);
@@ -63,7 +63,7 @@ function deal(){
     for(let i=0; i<2; i++){
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "cards/"+ card +".png";
+        cardImg.src = "../cards/"+ card +".png";
         yourScore += getValue(card);
         yourAces += checkAce(card);
         document.getElementById("yourCards").append(cardImg);
@@ -90,7 +90,7 @@ function hit(){
     //deal card
     let cardImg = document.createElement("img");
     let card = deck.pop();
-    cardImg.src = "cards/"+ card +".png";
+    cardImg.src = "../cards/"+ card +".png";
     yourScore += getValue(card);
     yourAces += checkAce(card);
     document.getElementById("yourCards").append(cardImg);
@@ -121,14 +121,14 @@ function stand(){
     while(dealerScore < 17){
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "/cards/"+ card +".png";
+        cardImg.src = "../cards/"+ card +".png";
         dealerScore += getValue(card);
         dealerAces += checkAce(card);
         document.getElementById("dealerCards").append(cardImg);
     }
 
     //show dealers hidden card
-    document.getElementById("hidden").src= "cards/" + hidden + ".png";
+    document.getElementById("hidden").src= "../cards/" + hidden + ".png";
 
 
 
