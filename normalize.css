@@ -10,7 +10,7 @@ body {
   }
   
   .bg {
-    background-image: url(/images/felt1.jpg);
+    background-image: url(images/felt1.jpg);
     background-size: 100%;
     background-repeat: repeat-y;
     background-position: center;
